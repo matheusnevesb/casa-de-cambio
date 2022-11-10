@@ -3,7 +3,7 @@ import Swal from 'sweetalert2';
 import './style.css'
 
 const botao = document.querySelector('#search-btn')
-const main = document.querySelector('main')
+const main = document.querySelector('#valores')
 
 
 function limpaMain() {
@@ -17,10 +17,12 @@ function criarElementos(nome, valor) {
     div.classList.add('box')
     const p1 = document.createElement('p')
     p1.classList.add('nome-moeda')
-    p1.innerText = nome
+    p1.innerHTML = `<span class="material-symbols-outlined simbolo">
+    monetization_on
+    </span> ${nome}`
     const p2 = document.createElement('p')
     p2.classList.add('valor-moeda')
-    p2.innerText = valor
+    p2.innerText = valor.toFixed(3)
     div.appendChild(p1)
     div.appendChild(p2)
     main.appendChild(div)
@@ -48,6 +50,7 @@ function testaValor(rates, moeda) {
     if (!Object.keys(rates).includes(moeda)) {
         return erro('Moeda não existente!')
     }
+    document.querySelector('#texto-main').innerHTML = `Valores referentes a 1 ${moeda}`
     return criarMoeda(rates)
     
 }

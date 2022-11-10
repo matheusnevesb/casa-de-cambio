@@ -5,20 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casa de cambio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" /> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <header>
-        <h1>Casa de cambio</h1>
+        <h1>Casa de <span>Câmbio</span></h1>
 
-        <input type="text" id="moeda-input" placeholder="Insira moeda">
-        <button id="search-btn">Pesquisar</button>
+        <div id="btn-input">
+            <input type="text" id="moeda-input" placeholder="Insira moeda">
+            <button id="search-btn">Pesquisar</button>
+        </div>
+        
     </header>
 
     <main>
-        <div class="box">
-            <p class="nome-moeda">AED</p>
-            <p class="valor-moeda">0.708117</p>
+        <div>
+            <h2 id="texto-main"></h2>
         </div>
+        <div id="valores">
+
+        </div>
+        
     </main>
 
 

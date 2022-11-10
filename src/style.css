@@ -1,5 +1,12 @@
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: #282C33;
+}
+
+header {
+    width: 50%;
 }
 
 h1 {
@@ -12,9 +19,36 @@ h1 {
     color: #FFFFFF;
 }
 
+h1 span {
+    color: #95EBA8;
+}
+
+#btn-input {
+    display: flex;
+    align-items: center;
+}
+
 input {
+    margin-right: 20px;
+    width: 171px;
+    height: 48px;
     background: rgba(217, 217, 217, 0.1);
     border-radius: 10px;
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #646464;
+}
+
+input::placeholder {
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #646464;
 }
 
 button {
@@ -24,5 +58,87 @@ button {
     font-size: 20px;
     line-height: 26px;
 
+    width: 171px;
+    height: 48px;
+
+    background: #96EB95;
+    border: 1px solid #96EB95;
+    border-radius: 10px;
+
     color: #373737;
+}
+
+main {
+    padding: 10px 0;
+    margin-top: 50px;
+    width: 50%;
+    height: auto;
+    min-height: 600px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 20px;
+}
+
+#valores {
+    padding: 10px 0;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    min-height: 600px;
+    border-radius: 20px;
+}
+
+#texto-main {
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: white;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    width: 150px;
+    height: 44px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.nome-moeda {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    width: 30px;
+    height: 20px;
+
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+}
+
+.valor-moeda {
+    width: 40px;
+    height: 16px;
+
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+
+    color: #FFE713;
+}
+
+.simbolo {
+    color: #95EBA8;
 }
