@@ -1,0 +1,28 @@
+body {
+    background: #282C33;
+}
+
+h1 {
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 79px;
+
+    color: #FFFFFF;
+}
+
+input {
+    background: rgba(217, 217, 217, 0.1);
+    border-radius: 10px;
+}
+
+button {
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: #373737;
+}
